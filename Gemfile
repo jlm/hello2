@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capistrano', '~> 3.4.0'
 gem 'capistrano-rails'
 # gem 'capistrano-rails', group: :development
+gem 'capistrano-rbenv'
 gem 'capistrano-passenger'
 
 group :development, :test do
