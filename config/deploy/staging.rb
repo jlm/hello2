@@ -7,6 +7,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
+server 'www.802-1.org', user: 'deploy', roles: %w{app db web}
 
 
 # role-based syntax
@@ -46,6 +47,11 @@
 #    forward_agent: false,
 #    auth_methods: %w(password)
 #  }
+set :ssh_options, {
+  keys: %w(/home/jlm/.ssh/id_rsa),
+  forward_agent: false,
+  auth_methods: %w(publickey password)
+}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
