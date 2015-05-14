@@ -2,7 +2,8 @@
 lock '3.4.0'
 
 set :application, 'hello2'
-set :repo_url, 'git@github.com:jlm/hello2.git'
+#set :repo_url, 'git@github.com:jlm/hello2.git'
+set :repo_url, 'https://github.com/jlm/hello2.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
